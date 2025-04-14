@@ -8,7 +8,7 @@ world = "world"
 if True:
     print(f"{hello} {world}!")
 
-# ?????# task 03  == Вcтавте пропущену змінну у ф-цію print
+# task 03  == Вcтавте пропущену змінну у ф-цію print
 text = "Hello world!"
 for letter in "Hello world!":
     print(text)
