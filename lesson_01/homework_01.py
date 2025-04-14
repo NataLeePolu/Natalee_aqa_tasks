@@ -57,7 +57,7 @@ print("У саду посадили", apples, "яблунь,", pears, "груш 
 """
 morning_temperature = 5
 day_temperature = morning_temperature-10
-evening_temperature=day_temperature+4
+evening_temperature = day_temperature+4
 print("Температура надвечір складала", evening_temperature, "градусів.")
 # task 09
 """
@@ -65,9 +65,9 @@ print("Температура надвечір складала", evening_temper
 # 1 хлопчик захворів та 2 дівчинки не прийшли сьогодні.
 # Скількі сьогодні дітей у театральному гуртку?
 """
-boys=24
-girls=boys/2
-theater_group_today=(boys+girls)-3
+boys = 24
+girls = boys/2
+theater_group_today = (boys+girls)-3
 print("Сьогодні у театральному гуртку", int(theater_group_today), "дітей")
 
 # task 10
@@ -76,8 +76,8 @@ print("Сьогодні у театральному гуртку", int(theater_g
 # а третя - як половина вартості першої та другої разом.
 # Скільки будуть коштувати усі книги, якщо купити по одному примірнику?
 """
-first_book=8
-second_book=first_book+2
-third_book=(first_book+second_book)/2
-purchase=first_book+second_book+third_book
+first_book = 8
+second_book = first_book+2
+third_book = (first_book+second_book)/2
+purchase = first_book+second_book+third_book
 print("Якщо купити по одному примірнику книг, то вартісь покупки складатиме", purchase, "грн.")
