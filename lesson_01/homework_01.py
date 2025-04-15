@@ -1,5 +1,5 @@
 # task 01 == Виправте синтаксичні помилки
-print("Hello", end = " ")
+print("Hello", end=" ")
 print("world!")
 
 # task 02 == Виправте синтаксичні помилки
@@ -8,7 +8,7 @@ world = "world"
 if True:
     print(f"{hello} {world}!")
 
-# ?????# task 03  == Вcтавте пропущену змінну у ф-цію print
+# task 03  == Вcтавте пропущену змінну у ф-цію print
 text = "Hello world!"
 for letter in "Hello world!":
     print(text)
@@ -44,9 +44,9 @@ print(perimeter)
 # У саду посадили 4 яблуні. Груш на 5 більше яблунь, а слив - на 2 менше.
 # Скільки всього дерев посадили в саду?
 """
-apples=4
-pears=apples+4
-plums=apples-2
+apples = 4
+pears = apples+4
+plums = apples-2
 print("У саду посадили", apples, "яблунь,", pears, "груш та ", plums, "слив. Усього посадили", apples+pears+plums, "дерев.")
 
 # task 08
@@ -55,7 +55,9 @@ print("У саду посадили", apples, "яблунь,", pears, "груш 
 # Після обіду температура опустилася на 10 градусів.
 # Надвечір потепліло на 4 градуси. Яка температура надвечір?
 """
-evening_temperature=0+5-10+4
+morning_temperature = 5
+day_temperature = morning_temperature-10
+evening_temperature = day_temperature+4
 print("Температура надвечір складала", evening_temperature, "градусів.")
 # task 09
 """
@@ -63,10 +65,10 @@ print("Температура надвечір складала", evening_temper
 # 1 хлопчик захворів та 2 дівчинки не прийшли сьогодні.
 # Скількі сьогодні дітей у театральному гуртку?
 """
-boys=24
-girls=boys/2
-theater_group_today=(boys+girls)-3
-print("Сьогодні у театральному гуртку", theater_group_today, "дітей")
+boys = 24
+girls = boys/2
+theater_group_today = (boys+girls)-3
+print("Сьогодні у театральному гуртку", int(theater_group_today), "дітей")
 
 # task 10
 """
@@ -74,8 +76,8 @@ print("Сьогодні у театральному гуртку", theater_group
 # а третя - як половина вартості першої та другої разом.
 # Скільки будуть коштувати усі книги, якщо купити по одному примірнику?
 """
-first_book=8
-second_book=first_book+2
-third_book=(first_book+second_book)/2
-purchase=first_book+second_book+third_book
+first_book = 8
+second_book = first_book+2
+third_book = (first_book+second_book)/2
+purchase = first_book+second_book+third_book
 print("Якщо купити по одному примірнику книг, то вартісь покупки складатиме", purchase, "грн.")
