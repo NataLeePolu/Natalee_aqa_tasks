@@ -46,11 +46,6 @@ car_data = {
 }
 search_criteria = (2017, 1.6, 36000)
 
-# for every_value in car_data.values():
-#     (search_criteria_updated) = every_value[1],every_value[2],every_value[-1]
-#     if search_criteria_updated[0] >= 2017 and search_criteria_updated[1] >= 1.6 and search_criteria_updated[2] <= 36000:
-#        print(car_data)
-
 # filtered_cars = []
 # for car_brand, car_info in car_data.items():
 #     year = car_info[1]
