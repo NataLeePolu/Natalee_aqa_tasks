@@ -4,7 +4,6 @@
 
 
 text_count = set({char for word in input("print something to count: ").split() for char in word})
-print(text_count)
 if len(text_count) > 10:
     print(True)
 else:
