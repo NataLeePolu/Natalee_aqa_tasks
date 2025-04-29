@@ -48,33 +48,14 @@ car_data = {
 }
 search_criteria = (2017, 1.6, 36000)
 
-# filtered_cars = []
-# for car_brand, car_info in car_data.items():
-#     year = car_info[1]
-#     engine_volume = car_info[2]
-#     price = car_info[-1]
-#     if year >= search_criteria[0] and engine_volume >= search_criteria[1] and price <= search_criteria[2]:
-#         filtered_cars.append((car_brand,car_info))
-# filtered_cars = sorted(filtered_cars, key = lambda x: x[1][-1] )
-# for car in filtered_cars[:5]:
-#      print(car)
+filtered_cars = {}
+for car_brand, car_info in car_data.items():
+    year = car_info[1]
+    engine_volume = car_info[2]
+    price = car_info[-1]
+    if year >= search_criteria[0] and engine_volume >= search_criteria[1] and price <= search_criteria[2]:
+        filtered_cars[car_brand] = car_info
+filtered_cars = dict(sorted(filtered_cars.items(), key = lambda x: x[1][-1])[:5] )
+for car_brand, car_info in filtered_cars.items():
+     print(f"{car_brand}: {car_info}")
 
-# filtered_cars = {}
-# for car_brand, car_info in car_data.items():
-#     year = car_info[1]
-#     engine_volume = car_info[2]
-#     price = car_info[-1]
-#     if year >= search_criteria[0] and engine_volume >= search_criteria[1] and price <= search_criteria[2]:
-#         filtered_cars[car_brand] = car_info
-# filtered_cars = dict(sorted(filtered_cars.items(), key = lambda x: x[1][-1])[:5] )
-# for car_brand, car_info in filtered_cars.items():
-#      print(f"{car_brand}: {car_info}")
-
-
-filtered_cars = {brand: info for brand, info in car_data.items()
-                 if info[1] >= search_criteria[0]
-                 and info[2] >= search_criteria[1]
-                 and info[-1] <= search_criteria[2]}
-sorted_cars = dict(sorted(filtered_cars.items(), key=lambda x: x[1][-1])[:5])
-for brand, info in sorted_cars.items():
-    print(f"{brand}: {info}")

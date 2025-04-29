@@ -29,8 +29,4 @@ if people_records[6][2] >= 30 and people_records[10][2] >= 30 and people_records
     print(True)
 else:
     print(False)
-# second option
-indexes = [6, 10, 13]
-result = all(people_records[i][2] >= 30 for i in indexes)
-print(result)
 
