@@ -6,4 +6,4 @@ pair_numbers = []
 for number in numerous_list:
     if number%2 == 0:
         pair_numbers.append(number)
-print(sum(pair_numbers))
+print(f"Сумма усіх парних чисел: {sum(pair_numbers)}")

@@ -9,4 +9,4 @@ lst2 = []
 for data in lst1:
     if type(data) is str:
         lst2.append(data)
-print(lst2)
+print(f"Оновлений список:\n{lst2}")
