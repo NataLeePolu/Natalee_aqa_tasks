@@ -8,12 +8,12 @@
 
 
 
-def numbers_summ(numbers):
+def summ_numbers(numbers):
     try:
-        return sum(map(lambda x: float(x.strip()), numbers.split(',')))
+        return sum(map(lambda x: int(x.strip()), numbers.split(',')))
     except ValueError:
-        return ("Не можу це зробити")
+        return "Не можу це зробити"
 
 numbers = ['1,2,3,4', '1,2,3,4,50', 'qwerty1,2,3', '23,44,5', 'amalia12', '23,4,7.8']
 for num_list in numbers:
-    print(numbers_summ(num_list))
+    print(summ_numbers(num_list))
