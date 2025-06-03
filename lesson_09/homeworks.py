@@ -1,4 +1,4 @@
-#homework_08
+#task1
 
 def summ_numbers(numbers):
     try:
@@ -10,29 +10,35 @@ numbers = ['1,2,3,4', '1,2,3,4,50', 'qwerty1,2,3', '23,44,5', 'amalia12', '23,4,
 for num_list in numbers:
     print(summ_numbers(num_list))
 
-#homework_07
 
-def multiplication_table(number):
-    # Initialize the appropriate variable
-    multiplier = 1
+#task2
 
-    # Complete the while loop condition.
-    while number * multiplier <= 25:
-        result = number * multiplier
-        print(str(number) + "x" + str(multiplier) + "=" + str(result))
-
-        # Increment the appropriate variable
-        multiplier += 1
-
-
-"""  Написати функцію, яка обчислює суму двох чисел.
-"""
 def pair_sum(number_1:int, number_2:int):  # рахує суму двох чисел
     return number_1 + number_2
 
 result = pair_sum(234,66)
 print(f"Сума двoх чисел дорівнює {result}")
 
+#task3
+
+def multiplication_table(number, max_abs_result=25):
+    try:
+        number = int(str(number).strip())
+    except ValueError:
+        raise ValueError("Функція приймає лише цілі числа")
+
+    if number == 0:
+        raise ValueError("Функція не приймає 0")
+
+    multiplier = 1
+    result_list = []
+
+    while abs(number * multiplier) <= max_abs_result:
+        result = number * multiplier
+        result_list.append(f"{number}x{multiplier}={result}")
+        multiplier += 1
+
+    return result_list
 
 
 
