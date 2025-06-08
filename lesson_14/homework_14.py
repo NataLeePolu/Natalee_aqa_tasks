@@ -34,4 +34,3 @@ try:
     student1.average_score = 109.0
 except ValueError as e:
     print("Помилка:", e)
-
