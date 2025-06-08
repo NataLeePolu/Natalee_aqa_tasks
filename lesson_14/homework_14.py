@@ -9,13 +9,13 @@ class Student:
         self.name = name
         self.second_name = second_name
         self.age = age
-        self.average_score = average_score  # це піде через setattr
+        self.average_score = average_score
 
     def __setattr__(self, key, value):
         if key == "average_score":
             if not (0 <= value <= 100):
                 raise ValueError("Середній бал має бути від 0 до 100!")
-        super().__setattr__(key, value)  # передаємо управління стандартному setattr
+        super().__setattr__(key, value)
 
     def show_info(self):
         print(f"Ім'я: {self.name} {self.second_name}")
