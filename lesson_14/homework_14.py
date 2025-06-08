@@ -22,7 +22,7 @@ class Student:
         print(f"Вік: {self.age}")
         print(f"Середній бал: {self.average_score}")
 
-student1 = Student("Dmytro", "Krylenko", 22, 84.5)
+student1 = Student("Dmytro", "Krylenko", 22, 84.5) #instance
 student1.show_info()
 
 print("\nЗмінюємо середній бал на валідне значення...\n")
@@ -30,5 +30,8 @@ student1.average_score = 89.0
 student1.show_info()
 
 print("\nЗмінюємо середній бал на невалідне значення...\n")
-student1.average_score = 109.0
-student1.show_info()
+try:
+    student1.average_score = 109.0
+except ValueError as e:
+    print("Помилка:", e)
+
